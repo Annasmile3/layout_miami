@@ -1,0 +1,26 @@
+.consultation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 70px 120px 152px; }
+  .consultation__text {
+    font-size: 16px;
+    line-height: 27px;
+    color: #3e3e3e;
+    max-width: 412px; }
+  .consultation__heading {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #0075ff; }
+  .consultation__form {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 394px; }
+  .consultation__button {
+    width: 413px; }
+
+/*# sourceMappingURL=consultation.css.map */
