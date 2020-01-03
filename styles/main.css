@@ -24,6 +24,7 @@ h1 {
 
 .header {
   height: 700px;
+  width: 100%;
   background-image: url("../images/header.jpg");
   background-size: cover;
   background-position: center;
@@ -221,6 +222,8 @@ h1 {
   padding: 104px 9.5% 136px; }
   .info__heading {
     max-width: 328px;
+    font-size: 48px;
+    line-height: 48px;
     font-weight: bold; }
   .info__link {
     color: #0075ff;
