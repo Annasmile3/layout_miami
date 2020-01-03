@@ -67,7 +67,9 @@ h1 {
     position: absolute;
     letter-spacing: -1.5px;
     left: 10.5%;
-    bottom: 165px; }
+    bottom: 165px;
+    -webkit-animation: appear 1.5s ease-in-out forwards;
+            animation: appear 1.5s ease-in-out forwards; }
     .header__caption::before {
       width: 35px;
       height: 2px;
@@ -89,6 +91,42 @@ h1 {
     content: "x"; }
   .header__nav-toggler {
     display: none; }
+
+@-webkit-keyframes appear {
+  from {
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+    opacity: 0; }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
+
+@keyframes appear {
+  from {
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+    opacity: 0; }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
+
+@-webkit-keyframes toggle {
+  from {
+    -webkit-transform: translateX(200px);
+            transform: translateX(200px);
+    opacity: 0; }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
+
+@keyframes toggle {
+  from {
+    -webkit-transform: translateX(200px);
+            transform: translateX(200px);
+    opacity: 0; }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
 
 @media screen and (max-width: 670px) {
   .header {
@@ -117,11 +155,6 @@ h1 {
       top: 39px;
       left: 23px;
       cursor: pointer; }
-    .header .header .nav {
-      width: 100%;
-      -webkit-box-align: start;
-          -ms-flex-align: start;
-              align-items: flex-start; }
     .header .header .nav__item {
       height: auto;
       margin-left: 0; }
@@ -145,8 +178,8 @@ h1 {
           -ms-flex-align: start;
               align-items: flex-start;
       background-color: #0075ff;
-      -webkit-transition: all 0.4s ease-in-out;
-      transition: all 0.4s ease-in-out; } }
+      -webkit-animation: toggle 0.5s ease-in-out;
+              animation: toggle 0.5s ease-in-out; } }
 
 .nav__list {
   display: -webkit-box;
@@ -157,9 +190,7 @@ h1 {
       flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out; }
+          justify-content: center; }
 
 .nav__item {
   padding: 8px 24px;
@@ -187,9 +218,12 @@ h1 {
 
 @media screen and (max-width: 670px) {
   .nav__list {
-    height: 568px;
+    height: 518px;
     padding: 0;
-    margin: 0; }
+    margin: 0;
+    position: absolute;
+    top: -520px;
+    padding-top: 50px; }
   .nav__item {
     font-size: 22px;
     line-height: 22px;
@@ -298,7 +332,14 @@ h1 {
        object-fit: cover;
     -o-object-position: center;
        object-position: center;
-    border-radius: 8px; }
+    border-radius: 8px;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s; }
+    .photos__image:hover {
+      -webkit-transform: translateY(-20px);
+              transform: translateY(-20px); }
   .photos-wide-left .photos__image:first-child {
     width: calc(67% - 10px); }
   .photos-wide-left .photos__image:last-child {
@@ -353,7 +394,15 @@ h1 {
   outline: none;
   color: #fff;
   cursor: pointer;
-  font-weight: bold; }
+  font-weight: bold;
+  -webkit-transition: background-color 0.1s, -webkit-box-shadow 0.2s;
+  transition: background-color 0.1s, -webkit-box-shadow 0.2s;
+  transition: background-color 0.1s, box-shadow 0.2s;
+  transition: background-color 0.1s, box-shadow 0.2s, -webkit-box-shadow 0.2s; }
+  .button-input:hover {
+    background: #0067df;
+    -webkit-box-shadow: 0 13px 27px rgba(0, 83, 181, 0.46);
+            box-shadow: 0 13px 27px rgba(0, 83, 181, 0.46); }
 
 .gallery {
   padding: 38px 120px 0; }
@@ -521,7 +570,14 @@ h1 {
   .person__photo {
     width: 153px;
     height: 153px;
-    border-radius: 50%; }
+    border-radius: 50%;
+    -webkit-transition: -webkit-transform 0.4s ease-out;
+    transition: -webkit-transform 0.4s ease-out;
+    transition: transform 0.4s ease-out;
+    transition: transform 0.4s ease-out, -webkit-transform 0.4s ease-out; }
+    .person__photo:hover {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1); }
   .person__name {
     margin-top: 28px;
     font-weight: bold;
