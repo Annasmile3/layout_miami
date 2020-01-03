@@ -23,4 +23,14 @@
   .consultation__button {
     width: 413px; }
 
+@media screen and (max-width: 560px) {
+  .consultation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 53px 20px 64px; }
+    .consultation__form {
+      width: 100%; } }
+
 /*# sourceMappingURL=consultation.css.map */
