@@ -24,8 +24,7 @@ h1 {
 
 .header {
   height: 700px;
-  width: 100%;
-  background-image: url("../images/header.jpg");
+  background: url("../images/header.jpg");
   background-size: cover;
   background-position: center;
   font-weight: bold;
@@ -62,8 +61,8 @@ h1 {
   .header__caption {
     color: #fff;
     font-size: 60px;
-    line-height: 60px;
-    width: 328px;
+    line-height: 1;
+    max-width: 328px;
     text-transform: none;
     position: absolute;
     letter-spacing: -1.5px;
@@ -91,7 +90,7 @@ h1 {
   .header__nav-toggler {
     display: none; }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 670px) {
   .header {
     height: 568px; }
     .header__top {
@@ -145,7 +144,9 @@ h1 {
       -webkit-box-align: start;
           -ms-flex-align: start;
               align-items: flex-start;
-      background-color: #0075ff; } }
+      background-color: #0075ff;
+      -webkit-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out; } }
 
 .nav__list {
   display: -webkit-box;
@@ -156,7 +157,9 @@ h1 {
       flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out; }
 
 .nav__item {
   padding: 8px 24px;
@@ -182,7 +185,7 @@ h1 {
     padding: 8px 0.4%;
     margin: 0 13px; } }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 670px) {
   .nav__list {
     height: 568px;
     padding: 0;
