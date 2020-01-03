@@ -572,14 +572,14 @@ h1 {
     padding: 53px 16% 0;
     grid-template-columns: repeat(2, 50%); }
     .contact__form {
-      width: 280px; } }
+      width: 100%; } }
 
 @media screen and (max-width: 560px) {
   .contact {
     padding: 30px 20px 0;
     grid-template-columns: repeat(1, 100%); }
     .contact__form {
-      width: 280px; } }
+      width: 100%; } }
 
 .footer {
   height: 360px;
