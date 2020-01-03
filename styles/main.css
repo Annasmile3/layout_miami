@@ -232,7 +232,7 @@ h1 {
     margin-bottom: 32px; }
   .nav__item-active {
     margin-top: 48px;
-    background: rgba(255, 255, 255, 0);
+    background: rgba(0, 0, 0, 0);
     -webkit-transition: color 0.3s;
     transition: color 0.3s; }
     .nav__item-active:hover {
