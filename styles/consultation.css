@@ -10,7 +10,7 @@
     font-size: 16px;
     line-height: 27px;
     color: #3e3e3e;
-    max-width: 412px; }
+    width: 40.4%; }
   .consultation__heading {
     font-weight: bold;
     font-size: 24px;
@@ -19,9 +19,15 @@
   .consultation__form {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    width: 394px; }
-  .consultation__button {
-    width: 413px; }
+    width: 40.5%; }
+
+@media screen and (max-width: 860px) {
+  .consultation {
+    padding: 53px 5.5% 64px; }
+    .consultation__text {
+      max-width: 300px; }
+    .consultation__form {
+      max-width: 270px; } }
 
 @media screen and (max-width: 560px) {
   .consultation {
@@ -29,8 +35,12 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 53px 20px 64px; }
+    padding: 33px 20px 64px; }
+    .consultation__text {
+      max-width: 520px;
+      width: 100%; }
     .consultation__form {
+      max-width: 520px;
       width: 100%; } }
 
 /*# sourceMappingURL=consultation.css.map */
