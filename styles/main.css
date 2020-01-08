@@ -86,7 +86,7 @@ h1 {
     line-height: 18px;
     font-weight: bold; }
   .header__nav-toggler-label::before {
-    content: "="; }
+    content: "\2630"; }
   .header__nav-toggler:checked ~ .header__nav-toggler-label::before {
     content: "x"; }
   .header__nav-toggler {
@@ -706,7 +706,7 @@ body {
   background-color: #fff; }
 
 section {
-  max-width: 1200px;
+  max-width: 1260px;
   margin: 0 auto; }
 
 /*# sourceMappingURL=main.css.map */
