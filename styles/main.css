@@ -210,6 +210,10 @@ h1 {
   transition: color 0.3s; }
   .nav__link:hover {
     color: #9fadc2; }
+  .nav__link:active {
+    padding: 8px 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px; }
 
 @media screen and (max-width: 1080px) {
   .nav__item {
@@ -708,5 +712,8 @@ body {
 section {
   max-width: 1260px;
   margin: 0 auto; }
+
+* {
+  scroll-behavior: smooth; }
 
 /*# sourceMappingURL=main.css.map */
